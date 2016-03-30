@@ -1,0 +1,26 @@
+.portfolio-welcome-page {
+  .name-and-about {
+    .name {
+      color: #E8E6E1;
+      font-weight: 700;
+      text-align: center;
+    }
+    .about {
+      margin: auto;
+      width: 45%;
+      text-align: justify;
+    }
+  }
+
+  .social-links {
+    width: 85%;
+    margin: auto;
+    font-size: 23px;
+    .links {
+      a {
+        color: red;
+        list-style: none;
+      }
+    }
+  }
+}

@@ -12,7 +12,6 @@ html {
 
 
 body {
-  background-color: #3C3938;
   .nav {
     float: right;
     text-align: right;
@@ -20,6 +19,7 @@ body {
     width: 170px;
     height: 240px;
     padding: 10px;
+    margin: 40px;
     p {
       font-family: Oxygen, Helvetica, Arial, sans-serif;
       padding-bottom: 10px;
@@ -29,8 +29,7 @@ body {
   .main {
     margin: 0 auto;
     padding-top: 64px;
-    max-width: 640px;
-    width: 94%;
+    margin: 22px;
     font-family: Oxygen, Helvetica, Arial, sans-serif;
   }
 

@@ -1,25 +1,83 @@
 .portfolio-welcome-page {
+  img.image {
+    border-radius: 150px;
+    display: block;
+    margin: auto;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    border: 2px solid gray;
+    &:hover {
+      filter: grayscale(0%);
+      -webkit-filter: grayscale(0%);
+      border: 1px solid gray;
+    }
+  }
   .name-and-about {
     .name {
       color: #E8E6E1;
       font-weight: 700;
       text-align: center;
+      font-size: 65px;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
     }
     .about {
       margin: auto;
-      width: 45%;
+      max-width: 466px;
       text-align: justify;
+      color: #7c7c7c
     }
   }
 
   .social-links {
-    width: 85%;
-    margin: auto;
+    margin: 15px auto;
     font-size: 23px;
-    .links {
-      a {
-        color: red;
-        list-style: none;
+    width: 90%;
+    max-width: 660px;
+    a {
+      color: black;
+      list-style: none;
+      text-decoration: none;
+      padding: 0px 3px;
+      i {
+        margin-right: 2px;
+      }
+    }
+    .resume:hover {
+      color: #19bf57;
+      background-color: #215E38;
+    }
+    .github:hover {
+      color: #e189e1;
+      background-color: #800080;
+    }
+    .linkedin:hover {
+      color: #f6daa6;
+      background-color: #ffa500;
+    }
+    .twitter:hover {
+      color: #b5b5f6;
+      background-color: #0000ff;
+    }
+    .spotify:hover {
+      color: #fdc4fd;
+      background-color: #ff00ff;
+    }
+    .email:hover {
+      color: white;
+      background-color: black;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .portfolio-welcome-page {
+    .name-and-about {
+      .name {
+        color: yellow;
+        font-size: 45px;
+      }
+      .about {
+        max-width: 330px;
       }
     }
   }

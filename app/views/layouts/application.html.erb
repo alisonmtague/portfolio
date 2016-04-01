@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Portfolio</title>
+  <link rel="icon"
+      type="image/png"
+      href="../../assets/images/favicon.png" />
+      
+  <title>AT</title>
   <link href='https://fonts.googleapis.com/css?family=Oxygen:700,400,300' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <!-- <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %> -->
@@ -10,21 +14,11 @@
 
 </head>
 <body>
-  <!-- <div class='nav'>
-    <p>RESUME</p>
-    <p>GITHUB</p>
-    <p>CONTAC</p>
-  </div> -->
-<!-- <%= render './nav' %> -->
 
   <div class="main">
     <%= yield %>
   </div>
 
-  <!-- <div class='footer'>
-    <i class="fa fa-github"></i>
-    <i class="fa fa-linkedin-square"></i>
-  </div> -->
-  <!-- <%= render './footer' %> -->
+
 </body>
 </html>

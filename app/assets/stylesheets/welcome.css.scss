@@ -1,4 +1,5 @@
 .portfolio-welcome-page {
+    padding-top: 64px;
   img.image {
     border-radius: 150px;
     display: block;
@@ -29,6 +30,7 @@
   }
 
   .social-links {
+    margin: 15px 0;
     margin: 15px auto;
     font-size: 23px;
     width: 90%;
@@ -42,9 +44,16 @@
         margin-right: 2px;
       }
     }
-    .resume:hover {
-      color: #19bf57;
-      background-color: #215E38;
+    .resume {
+      &:before {
+        content: "\f07c";
+        font-family: FontAwesome;
+        padding-right: 2px;
+      }
+      &:hover {
+        color: #19bf57;
+        background-color: #215E38;
+      }
     }
     .github:hover {
       color: #e189e1;

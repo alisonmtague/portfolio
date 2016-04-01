@@ -8,11 +8,18 @@
       I like building out the front end while improving my skills with Rails.</p>
   </div>
   <div class='social-links'>
-    <a class='resume'><i class="fa fa-folder-open"></i>Look at my resume</a>
+
+    <%= link_to "Look at my resume", resume_path, class: 'resume' %>
     <a class='github' href='https://github.com/alisonmtague'><i class="fa fa-github"></i>Check out what I'm working on</a>
     <a class='linkedin' href='https://www.linkedin.com/in/alisontague'><i class="fa fa-linkedin-square"></i>View my LinkedIn</a>
     <a class='twitter' href='https://twitter.com/alisontague'><i class="fa fa-twitter"></i>Read my tweets</a>
     <a class='spotify' href='https://open.spotify.com/user/1261061223'><i class="fa fa-music"></i>See my music interests</a>
-    <a class='email'><i class="fa fa-envelope-o"></i>Email me</a>
+
+    <%= mail_to "alisonmtague@gmail.com", subject: "Hey Alison!" do %>
+      <span class='email'><i class="fa fa-envelope-o"></i>Email me</span>
+    <% end %>
+
   </div>
 </div>
+
+<%= render partial: 'welcome_footer' %>

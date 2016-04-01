@@ -1,4 +1,4 @@
-class WelcomeController < ApplicationController
+class ResumeController < ApplicationController
 
   def show
     render 'show.html.erb'

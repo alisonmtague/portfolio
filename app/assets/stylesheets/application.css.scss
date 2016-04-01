@@ -28,7 +28,6 @@ body {
 
   .main {
     margin: 0 auto;
-    padding-top: 64px;
     margin: 22px;
     font-family: Oxygen, Helvetica, Arial, sans-serif;
   }
@@ -38,11 +37,17 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
-    padding: 1rem;
+    padding: 8px;
     background-color: #efefef;
     text-align: center;
+    font-size: 12px;
     p {
       display: inline;
+    }
+    a i {
+      font-size: 21px;
+      padding: 0px 13px;
+      color: black;
     }
   }
 }
